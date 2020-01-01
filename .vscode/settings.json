@@ -1,0 +1,5 @@
+{
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.pythonPath": "/Users/ehartye/Documents/ev3dev/wafflebot-gadget/.venv/bin/python3"
+}

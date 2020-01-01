@@ -1,0 +1,86 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "waffle bot",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "MakeWafflesIntent",
+                    "slots": [
+                        {
+                            "name": "DesiredWaffles",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "I desire {DesiredWaffles} waffles",
+                        "Make me {DesiredWaffles} waffles",
+                        "{DesiredWaffles} waffles please",
+                        "Make me a waffle"
+                    ]
+                },
+                {
+                    "name": "SetCookTimeIntent",
+                    "slots": [
+                        {
+                            "name": "CookTimeMinutes",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "CookTimeSeconds",
+                            "type": "AMAZON.NUMBER"
+                        }                        
+                    ],
+                    "samples": [
+                        "Set cook time to {CookTimeMinutes} minutes",
+                        "Cook the waffles for {CookTimeMinutes} minutes",
+                        "Set the waffle cook time to {CookTimeMinutes} minutes",
+                        "Set cook time to {CookTimeMinutes} minutes and {CookTimeSeconds} seconds",
+                        "Cook the waffles for {CookTimeMinutes} minutes and {CookTimeSeconds} seconds",
+                        "Set the waffle cook time to {CookTimeMinutes} minutes and {CookTimeSeconds} seconds",                        
+                        "Set cook time to {CookTimeMinutes}",
+                        "Cook the waffles for {CookTimeMinutes}",
+                        "Set the waffle cook time to {CookTimeMinutes}"                        
+                    ]
+                },       
+                {
+                    "name": "SetDispenseTimeIntent",
+                    "slots": [
+                        {
+                            "name": "DispenseTimeSeconds",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "Set batter time to {DispenseTimeSeconds} seconds",
+                        "Set batter dispense time to {DispenseTimeSeconds} seconds",
+                        "Set dispense time to {DispenseTimeSeconds} seconds",
+                        "Dispense for {DispenseTimeSeconds} seconds",
+                        "Dispense batter for {DispenseTimeSeconds} seconds",
+                        "Set batter time to {DispenseTimeSeconds}",
+                        "Set batter dispense time to {DispenseTimeSeconds}",
+                        "Set dispense time to {DispenseTimeSeconds}",
+                        "Dispense for {DispenseTimeSeconds}",
+                        "Dispense batter for {DispenseTimeSeconds}"                        
+                    ]
+                },                   
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": []
+        }
+    }
+}
